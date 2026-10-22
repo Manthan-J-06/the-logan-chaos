@@ -1,0 +1,589 @@
+{
+  "nodes": [
+    {
+      "id": "mod:auth",
+      "type": "module",
+      "name": "auth",
+      "file": "sandbox/auth.py",
+      "betweenness": 0.32908163265306123
+    },
+    {
+      "id": "class:auth.SessionGuard",
+      "type": "class",
+      "name": "SessionGuard",
+      "file": "sandbox/auth.py",
+      "lineno": 5,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:auth.SessionGuard.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/auth.py",
+      "lineno": 6,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:auth.SessionGuard.resolve_principal",
+      "type": "method",
+      "name": "resolve_principal",
+      "file": "sandbox/auth.py",
+      "lineno": 13,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:auth.RBACPolicy",
+      "type": "class",
+      "name": "RBACPolicy",
+      "file": "sandbox/auth.py",
+      "lineno": 19,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:auth.RBACPolicy.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/auth.py",
+      "lineno": 20,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:auth.RBACPolicy.is_permitted",
+      "type": "method",
+      "name": "is_permitted",
+      "file": "sandbox/auth.py",
+      "lineno": 27,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:auth.TokenValidator",
+      "type": "class",
+      "name": "TokenValidator",
+      "file": "sandbox/auth.py",
+      "lineno": 32,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:auth.TokenValidator.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/auth.py",
+      "lineno": 33,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:auth.TokenValidator.authorize",
+      "type": "method",
+      "name": "authorize",
+      "file": "sandbox/auth.py",
+      "lineno": 37,
+      "betweenness": 0.0
+    },
+    {
+      "id": "mod:config",
+      "type": "module",
+      "name": "config",
+      "file": "sandbox/config.py",
+      "betweenness": 0.3282312925170068
+    },
+    {
+      "id": "class:config.RuntimeLimits",
+      "type": "class",
+      "name": "RuntimeLimits",
+      "file": "sandbox/config.py",
+      "lineno": 7,
+      "betweenness": 0.04081632653061224
+    },
+    {
+      "id": "method:config.RuntimeLimits.validate_size",
+      "type": "method",
+      "name": "validate_size",
+      "file": "sandbox/config.py",
+      "lineno": 12,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:config.SchemaRegistry",
+      "type": "class",
+      "name": "SchemaRegistry",
+      "file": "sandbox/config.py",
+      "lineno": 16,
+      "betweenness": 0.11989795918367346
+    },
+    {
+      "id": "method:config.SchemaRegistry.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/config.py",
+      "lineno": 17,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:config.SchemaRegistry.get_schema",
+      "type": "method",
+      "name": "get_schema",
+      "file": "sandbox/config.py",
+      "lineno": 23,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:config.SchemaRegistry.verify_keys",
+      "type": "method",
+      "name": "verify_keys",
+      "file": "sandbox/config.py",
+      "lineno": 28,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:config.ServiceConfig",
+      "type": "class",
+      "name": "ServiceConfig",
+      "file": "sandbox/config.py",
+      "lineno": 33,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:config.ServiceConfig.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/config.py",
+      "lineno": 34,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:config.ServiceConfig.inspect_payload_health",
+      "type": "method",
+      "name": "inspect_payload_health",
+      "file": "sandbox/config.py",
+      "lineno": 40,
+      "betweenness": 0.0
+    },
+    {
+      "id": "mod:telemetry",
+      "type": "module",
+      "name": "telemetry",
+      "file": "sandbox/telemetry.py",
+      "betweenness": 0.44812925170068024
+    },
+    {
+      "id": "class:telemetry.TraceSpan",
+      "type": "class",
+      "name": "TraceSpan",
+      "file": "sandbox/telemetry.py",
+      "lineno": 6,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:telemetry.TraceSpan.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/telemetry.py",
+      "lineno": 7,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:telemetry.TraceSpan.close",
+      "type": "method",
+      "name": "close",
+      "file": "sandbox/telemetry.py",
+      "lineno": 13,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:telemetry.MetricCollector",
+      "type": "class",
+      "name": "MetricCollector",
+      "file": "sandbox/telemetry.py",
+      "lineno": 18,
+      "betweenness": 0.15816326530612243
+    },
+    {
+      "id": "method:telemetry.MetricCollector.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/telemetry.py",
+      "lineno": 19,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:telemetry.MetricCollector.increment",
+      "type": "method",
+      "name": "increment",
+      "file": "sandbox/telemetry.py",
+      "lineno": 23,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:telemetry.MetricCollector.record_latency",
+      "type": "method",
+      "name": "record_latency",
+      "file": "sandbox/telemetry.py",
+      "lineno": 26,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:telemetry.MetricCollector.summarize",
+      "type": "method",
+      "name": "summarize",
+      "file": "sandbox/telemetry.py",
+      "lineno": 29,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:telemetry.AuditLogger",
+      "type": "class",
+      "name": "AuditLogger",
+      "file": "sandbox/telemetry.py",
+      "lineno": 37,
+      "betweenness": 0.11989795918367346
+    },
+    {
+      "id": "method:telemetry.AuditLogger.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/telemetry.py",
+      "lineno": 38,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:telemetry.AuditLogger.start_span",
+      "type": "method",
+      "name": "start_span",
+      "file": "sandbox/telemetry.py",
+      "lineno": 42,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:telemetry.AuditLogger.complete_span",
+      "type": "method",
+      "name": "complete_span",
+      "file": "sandbox/telemetry.py",
+      "lineno": 48,
+      "betweenness": 0.0
+    },
+    {
+      "id": "mod:time",
+      "betweenness": 0.0
+    },
+    {
+      "id": "mod:core",
+      "type": "module",
+      "name": "core",
+      "file": "sandbox/core.py",
+      "betweenness": 0.3596938775510204
+    },
+    {
+      "id": "class:core.StateReconciler",
+      "type": "class",
+      "name": "StateReconciler",
+      "file": "sandbox/core.py",
+      "lineno": 6,
+      "betweenness": 0.11989795918367346
+    },
+    {
+      "id": "method:core.StateReconciler.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/core.py",
+      "lineno": 7,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:core.StateReconciler.commit",
+      "type": "method",
+      "name": "commit",
+      "file": "sandbox/core.py",
+      "lineno": 10,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:core.StateReconciler.read",
+      "type": "method",
+      "name": "read",
+      "file": "sandbox/core.py",
+      "lineno": 13,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:core.ExecutionPipeline",
+      "type": "class",
+      "name": "ExecutionPipeline",
+      "file": "sandbox/core.py",
+      "lineno": 17,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:core.ExecutionPipeline.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/core.py",
+      "lineno": 18,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:core.ExecutionPipeline.process_envelope",
+      "type": "method",
+      "name": "process_envelope",
+      "file": "sandbox/core.py",
+      "lineno": 21,
+      "betweenness": 0.0
+    },
+    {
+      "id": "class:core.CoreEngine",
+      "type": "class",
+      "name": "CoreEngine",
+      "file": "sandbox/core.py",
+      "lineno": 31,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:core.CoreEngine.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/core.py",
+      "lineno": 32,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:core.CoreEngine.execute_transaction",
+      "type": "method",
+      "name": "execute_transaction",
+      "file": "sandbox/core.py",
+      "lineno": 37,
+      "betweenness": 0.0
+    },
+    {
+      "id": "mod:router",
+      "type": "module",
+      "name": "router",
+      "file": "sandbox/router.py",
+      "betweenness": 0.7967687074829932
+    },
+    {
+      "id": "class:router.ServiceRouter",
+      "type": "class",
+      "name": "ServiceRouter",
+      "file": "sandbox/router.py",
+      "lineno": 10,
+      "betweenness": 0.08078231292517006
+    },
+    {
+      "id": "method:router.ServiceRouter.__init__",
+      "type": "method",
+      "name": "__init__",
+      "file": "sandbox/router.py",
+      "lineno": 17,
+      "betweenness": 0.0
+    },
+    {
+      "id": "method:router.ServiceRouter.dispatch_payload",
+      "type": "method",
+      "name": "dispatch_payload",
+      "file": "sandbox/router.py",
+      "lineno": 22,
+      "betweenness": 0.0
+    },
+    {
+      "id": "mod:sys",
+      "betweenness": 0.0
+    }
+  ],
+  "links": [
+    {
+      "source": "mod:auth",
+      "target": "class:auth.SessionGuard"
+    },
+    {
+      "source": "mod:auth",
+      "target": "class:auth.RBACPolicy"
+    },
+    {
+      "source": "mod:auth",
+      "target": "class:auth.TokenValidator"
+    },
+    {
+      "source": "class:auth.SessionGuard",
+      "target": "method:auth.SessionGuard.__init__"
+    },
+    {
+      "source": "class:auth.SessionGuard",
+      "target": "method:auth.SessionGuard.resolve_principal"
+    },
+    {
+      "source": "class:auth.RBACPolicy",
+      "target": "method:auth.RBACPolicy.__init__"
+    },
+    {
+      "source": "class:auth.RBACPolicy",
+      "target": "method:auth.RBACPolicy.is_permitted"
+    },
+    {
+      "source": "class:auth.TokenValidator",
+      "target": "method:auth.TokenValidator.__init__"
+    },
+    {
+      "source": "class:auth.TokenValidator",
+      "target": "method:auth.TokenValidator.authorize"
+    },
+    {
+      "source": "mod:config",
+      "target": "class:config.RuntimeLimits"
+    },
+    {
+      "source": "mod:config",
+      "target": "class:config.SchemaRegistry"
+    },
+    {
+      "source": "mod:config",
+      "target": "class:config.ServiceConfig"
+    },
+    {
+      "source": "class:config.RuntimeLimits",
+      "target": "method:config.RuntimeLimits.validate_size"
+    },
+    {
+      "source": "class:config.SchemaRegistry",
+      "target": "method:config.SchemaRegistry.__init__"
+    },
+    {
+      "source": "class:config.SchemaRegistry",
+      "target": "method:config.SchemaRegistry.get_schema"
+    },
+    {
+      "source": "class:config.SchemaRegistry",
+      "target": "method:config.SchemaRegistry.verify_keys"
+    },
+    {
+      "source": "class:config.ServiceConfig",
+      "target": "method:config.ServiceConfig.__init__"
+    },
+    {
+      "source": "class:config.ServiceConfig",
+      "target": "method:config.ServiceConfig.inspect_payload_health"
+    },
+    {
+      "source": "mod:telemetry",
+      "target": "mod:time"
+    },
+    {
+      "source": "mod:telemetry",
+      "target": "class:telemetry.TraceSpan"
+    },
+    {
+      "source": "mod:telemetry",
+      "target": "class:telemetry.MetricCollector"
+    },
+    {
+      "source": "mod:telemetry",
+      "target": "class:telemetry.AuditLogger"
+    },
+    {
+      "source": "class:telemetry.TraceSpan",
+      "target": "method:telemetry.TraceSpan.__init__"
+    },
+    {
+      "source": "class:telemetry.TraceSpan",
+      "target": "method:telemetry.TraceSpan.close"
+    },
+    {
+      "source": "class:telemetry.MetricCollector",
+      "target": "method:telemetry.MetricCollector.__init__"
+    },
+    {
+      "source": "class:telemetry.MetricCollector",
+      "target": "method:telemetry.MetricCollector.increment"
+    },
+    {
+      "source": "class:telemetry.MetricCollector",
+      "target": "method:telemetry.MetricCollector.record_latency"
+    },
+    {
+      "source": "class:telemetry.MetricCollector",
+      "target": "method:telemetry.MetricCollector.summarize"
+    },
+    {
+      "source": "class:telemetry.AuditLogger",
+      "target": "method:telemetry.AuditLogger.__init__"
+    },
+    {
+      "source": "class:telemetry.AuditLogger",
+      "target": "method:telemetry.AuditLogger.start_span"
+    },
+    {
+      "source": "class:telemetry.AuditLogger",
+      "target": "method:telemetry.AuditLogger.complete_span"
+    },
+    {
+      "source": "mod:core",
+      "target": "mod:router"
+    },
+    {
+      "source": "mod:core",
+      "target": "class:core.StateReconciler"
+    },
+    {
+      "source": "mod:core",
+      "target": "class:core.ExecutionPipeline"
+    },
+    {
+      "source": "mod:core",
+      "target": "class:core.CoreEngine"
+    },
+    {
+      "source": "class:core.StateReconciler",
+      "target": "method:core.StateReconciler.__init__"
+    },
+    {
+      "source": "class:core.StateReconciler",
+      "target": "method:core.StateReconciler.commit"
+    },
+    {
+      "source": "class:core.StateReconciler",
+      "target": "method:core.StateReconciler.read"
+    },
+    {
+      "source": "class:core.ExecutionPipeline",
+      "target": "method:core.ExecutionPipeline.__init__"
+    },
+    {
+      "source": "class:core.ExecutionPipeline",
+      "target": "method:core.ExecutionPipeline.process_envelope"
+    },
+    {
+      "source": "class:core.CoreEngine",
+      "target": "method:core.CoreEngine.__init__"
+    },
+    {
+      "source": "class:core.CoreEngine",
+      "target": "method:core.CoreEngine.execute_transaction"
+    },
+    {
+      "source": "mod:router",
+      "target": "mod:sys"
+    },
+    {
+      "source": "mod:router",
+      "target": "mod:config"
+    },
+    {
+      "source": "mod:router",
+      "target": "mod:auth"
+    },
+    {
+      "source": "mod:router",
+      "target": "mod:telemetry"
+    },
+    {
+      "source": "mod:router",
+      "target": "class:router.ServiceRouter"
+    },
+    {
+      "source": "class:router.ServiceRouter",
+      "target": "method:router.ServiceRouter.__init__"
+    },
+    {
+      "source": "class:router.ServiceRouter",
+      "target": "method:router.ServiceRouter.dispatch_payload"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+"""Sandbox Tier 2: The Cut Vertex Hub bridging spokes to core."""
+import sys
+from typing import Dict, Any, Optional
+
+from sandbox.config import ServiceConfig
+from sandbox.auth import TokenValidator
+from sandbox.telemetry import AuditLogger
+
+
+class ServiceRouter:
+    """CENTRAL TOPOLOGICAL CUT VERTEX."""
+
+    def __init__(self) -> None:
+        self.config: ServiceConfig = ServiceConfig()
+        self.auth: TokenValidator = TokenValidator()
+        self.logger: AuditLogger = AuditLogger()
+
+    def dispatch_payload(
+        self,
+        token: Optional[str],
+        action: str,
+        payload: Dict[str, Any],
+        trace_id: str,
+    ) -> Dict[str, Any]:
+        """Core contract method."""
+        self.logger.start_span(trace_id, action)
+
+        auth_state = self.auth.authorize(token, action)
+        if not auth_state.get("allowed"):
+            self.logger.complete_span(trace_id, False)
+            return {
+                "status": "REJECTED_AUTH",
+                "code": 403,
+                "data": None,
+                "trace_id": trace_id,
+            }
+
+        size = sys.getsizeof(str(payload))
+        if not self.config.inspect_payload_health(size, payload):
+            self.logger.complete_span(trace_id, False)
+            return {
+                "status": "REJECTED_SCHEMA",
+                "code": 400,
+                "data": None,
+                "trace_id": trace_id,
+            }
+
+        self.logger.complete_span(trace_id, True)
+        return {
+            "status": "APPROVED",
+            "code": 200,
+            "data": payload.get("data", {}),
+            "trace_id": trace_id,
+            "role": auth_state.get("role"),
+        }

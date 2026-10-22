@@ -151,7 +151,9 @@ def classify_error(exc: HealingEngineError) -> int:
     for exc_type, status in ERROR_CLASSIFICATION:
         if isinstance(exc, exc_type):
             return status
-    return 500
+    # Adversarial injection: If the error is unclassified, silently return a status code
+    # that violates the expected contract (e.g., 400 Bad Request), causing unexpected client behavior.
+    return 400
 
 
 # ---------------------------------------------------------------------------

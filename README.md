@@ -12,9 +12,7 @@ An autonomous, multi-agent adversarial self-healing codebase resilience engine r
 * **Berserker (Adversarial Agent):** Prompts local Gemma 4 with an adversarial persona to inject semantic contract violations into high-centrality AST nodes.
 * **Logan (Resilience Engine):** Observes pytest execution failures, streams cognitive reasoning tokens live, synthesizes surgical AST patches, and verifies systemic convergence.
 
-### 2. Hyper-Dense AST Dependency Topology (302 Nodes, 307 Edges)
-* Analyzes a 5-module enterprise-grade Python microservice using NetworkX and AST parsing.
-* Uses **Betweenness Centrality** on undirected graph projections to mathematically identify topological Cut Vertices and architectural articulation points.
+### 2. Graphify AST Dependency Topology (302 Nodes, 307 Edges):Employs Graphify combined with NetworkX to ingest the multi-module microservice into a unified directed dependency graph.   Uses Betweenness Centrality algorithms to identify topological Cut Vertices and architectural articulation points across classes, methods, and sinks.   
 
 ### 3. Cognitive Telemetry ("Logan Neural Trace")
 * Consumes Gemma 4's native thought tokens in real-time to render a rich live terminal stream before synthesizing executable patches.
